@@ -1,0 +1,34 @@
+#!/bin/bash
+
+mkdir CV_friend
+mkdir CV_enemy
+mkdir BB_friend
+mkdir BB_enemy
+mkdir CA_friend
+mkdir CA_enemy
+mkdir DD_friend
+mkdir DD_enemy
+
+while read line
+do
+	./main.py CV friend "$line" CV_friend/
+	./main.py CV enemy "$line" CV_enemy/
+done < cv_list.txt
+
+while read line
+do
+	./main.py BB friend "$line" BB_friend/
+	./main.py BB enemy "$line" BB_enemy/
+done < bb_list.txt
+
+while read line
+do
+	./main.py CA friend "$line" CA_friend/
+	./main.py CA enemy "$line" CA_enemy/
+done < ca_list.txt
+
+while read line
+do
+	./main.py DD friend "$line" DD_friend/
+	./main.py DD enemy "$line" DD_enemy/
+done < dd_list.txt
