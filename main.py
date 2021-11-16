@@ -1,7 +1,8 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 from PIL import Image, ImageFont, ImageDraw
 import sys
 
+fontface = "Roboto-Medium.ttf"
 img_size = (400,400)
 icon_size = 175
 center = tuple([i//2 for i in img_size])
@@ -25,7 +26,7 @@ def add_classicon(base, shipclass, color, fontsize):
 	return base
 
 def add_shipname(base, name, color, fontsize):
-	font = ImageFont.truetype("Roboto-Medium.ttf", fontsize)
+	font = ImageFont.truetype(fontface, fontsize)
 	draw = ImageDraw.Draw(base)
 	while draw.textsize(name, font=font)[0]>img_size[0]:
 		name = name[:-1]
