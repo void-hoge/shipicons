@@ -9,6 +9,18 @@ mkdir CA_enemy
 mkdir DD_friend
 mkdir DD_enemy
 
+./main.py CV friend " " CV_friend/
+./main.py CV enemy " " CV_enemy/
+
+./main.py BB friend " " BB_friend/
+./main.py BB enemy " " BB_enemy/
+
+./main.py CA friend " " CA_friend/
+./main.py CA enemy " " CA_enemy/
+
+./main.py DD friend " " DD_friend/
+./main.py DD enemy " " DD_enemy/
+
 while read line
 do
 	./main.py CV friend "$line" CV_friend/
