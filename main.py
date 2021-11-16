@@ -59,6 +59,6 @@ base = Image.new("RGBA", img_size, color=base_color)
 base = add_classicon(base, shipclass, color, icon_size)
 base = add_shipname(base, name, color, 75)
 
-filename = argv[4]+name+".png"
+filename = argv[4]
 
 base.save(filename)
