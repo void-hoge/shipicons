@@ -25,22 +25,26 @@ while read line
 do
 	./main.py CV friend "$line" "CV_friend/$line.png"
 	./main.py CV enemy "$line" "CV_enemy/$line.png"
+	echo "$line generated" 
 done < cv_list.txt
 
 while read line
 do
 	./main.py BB friend "$line" "BB_friend/$line.png"
 	./main.py BB enemy "$line" "BB_enemy/$line.png"
+	echo "$line generated"
 done < bb_list.txt
 
 while read line
 do
 	./main.py CA friend "$line" "CA_friend/$line.png"
 	./main.py CA enemy "$line" "CA_enemy/$line.png"
+	echo "$line generated"
 done < ca_list.txt
 
 while read line
 do
 	./main.py DD friend "$line" "DD_friend/$line.png"
 	./main.py DD enemy "$line" "DD_enemy/$line.png"
+	echo "$line generated"
 done < dd_list.txt
