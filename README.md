@@ -1,4 +1,4 @@
-# SHIP ICON MAKER
+# SHIP ICON GENERATOR
 - タク作るときの船のアイコンを生成するやつ
 
 ![VOIDHOGE.png](VOIDHOGE.png)
@@ -10,7 +10,7 @@
   - システムフォントにない場合はインストールするか、別のフォントをmain.pyの5行目で指定する必要がある。
 
 ## USAGE
-- `./main.py (CV|BB|CA|CL|DD|cv|bb|ca|cl|dd) (enemy|friend) <name> <filename>`
+- `./main.py (CV|BB|CA|CL|DD|cv|bb|ca|cl|dd) (enemy|ally) <name> <filename>`
 - 名前に空白を含む場合は、"DES MOINES"のようにダブルクウォートで囲むと吉。
 - T10の艦名リスト((cv|bb|ca|dd)_list.txt)が付属しているので、それを使って`./generate`すると良い感じに生成してくれる。(生成済み)
   - リストを編集して自由に船を増やせる。
