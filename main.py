@@ -6,7 +6,7 @@ fontface = "Roboto-Medium.ttf"
 img_size = (400,400)
 icon_size = 175
 center = tuple([i//2 for i in img_size])
-friend = (0,255,0)
+ally = (0,255,0)
 enemy = (255, 69, 69)
 base_color = (0,0,0,0)
 CV = "0"
@@ -50,8 +50,8 @@ def main():
 		raise Exception("Invalid class name. (CV|BB|CA|CL|DD|cv|bb|ca|cl|dd)")
 	if (argv[2] == "enemy"):
 		color = enemy
-	elif (argv[2] == "friend"):
-		color = friend
+	elif (argv[2] == "ally"):
+		color = ally
 	name = argv[3]
 	base = Image.new("RGBA", img_size, color=base_color)
 	base = add_classicon(base, shipclass, color, icon_size)

@@ -1,50 +1,50 @@
 #!/bin/bash
 
-mkdir CV_friend
+mkdir CV_ally
 mkdir CV_enemy
-mkdir BB_friend
+mkdir BB_ally
 mkdir BB_enemy
-mkdir CA_friend
+mkdir CA_ally
 mkdir CA_enemy
-mkdir DD_friend
+mkdir DD_ally
 mkdir DD_enemy
 
-./main.py CV friend " " "CV_friend/UNNAMED.png"
+./main.py CV ally " " "CV_ally/UNNAMED.png"
 ./main.py CV enemy " " "CV_enemy/UNNAMED.png"
 
-./main.py BB friend " " "BB_friend/UNNAMED.png"
+./main.py BB ally " " "BB_ally/UNNAMED.png"
 ./main.py BB enemy " " "BB_enemy/UNNAMED.png"
 
-./main.py CA friend " " "CA_friend/UNNAMED.png"
+./main.py CA ally " " "CA_ally/UNNAMED.png"
 ./main.py CA enemy " " "CA_enemy/UNNAMED.png"
 
-./main.py DD friend " " "DD_friend/UNNAMED.png"
+./main.py DD ally " " "DD_ally/UNNAMED.png"
 ./main.py DD enemy " " "DD_enemy/UNNAMED.png"
 
 while read line
 do
-	./main.py CV friend "$line" "CV_friend/$line.png"
+	./main.py CV ally "$line" "CV_ally/$line.png"
 	./main.py CV enemy "$line" "CV_enemy/$line.png"
 	echo "$line generated" 
 done < cv_list.txt
 
 while read line
 do
-	./main.py BB friend "$line" "BB_friend/$line.png"
+	./main.py BB ally "$line" "BB_ally/$line.png"
 	./main.py BB enemy "$line" "BB_enemy/$line.png"
 	echo "$line generated"
 done < bb_list.txt
 
 while read line
 do
-	./main.py CA friend "$line" "CA_friend/$line.png"
+	./main.py CA ally "$line" "CA_ally/$line.png"
 	./main.py CA enemy "$line" "CA_enemy/$line.png"
 	echo "$line generated"
 done < ca_list.txt
 
 while read line
 do
-	./main.py DD friend "$line" "DD_friend/$line.png"
+	./main.py DD ally "$line" "DD_ally/$line.png"
 	./main.py DD enemy "$line" "DD_enemy/$line.png"
 	echo "$line generated"
 done < dd_list.txt
