@@ -19,5 +19,9 @@
   - これを得るためのjsonviwerのクエリをallships/query.txtに書いた。
 
 ## LICENSE
-- WGに怒られる使い方はやめよう。商用利用とか。
-- 私void-hogeは、このプログラム、このリポジトリに含まれる全てのデータ、このプログラムによって生成された全てのデータについて、なんの責任も負わない。
+- 艦の名前及びID、アイコン(文字部分を除く記号)は、WGの著作物である。よって、以下のガイドラインに基づいてこのリポジトリを公開する。
+  - 日本語: https://worldofwarships.asia/ja/news/general-news/content-creator-guidelines/
+  - English: https://worldofwarships.asia/en/news/general-news/content-creator-guidelines/
+- このプログラムなどを頒布、改変した上で頒布する場合、上のガイドラインに適合する必要がある。
+- 私(IGN:voidhoge, Github:void-hoge, Twitter:@voidhoge, Discord: void-hoge#5115)はこのリポジトリに含まれるデータ、プログラム、及びプログラムによって生成されたデータに対してなんの責任も負わない。
+- 一部にテスト艦の名前を含むが、これは全てdevelopment blogの内容による。テスト中に名前が変更されることがある。また、一時的なテストのためのテスト艦で、今後実装されないものも含まれる。(Brennus, Lapplandなど)
