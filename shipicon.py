@@ -70,6 +70,7 @@ def main():
     parser.add_argument('--shiplist', type=str, required=True)
     parser.add_argument('--shipclass', type=str, required=True)
     parser.add_argument('--size', type=int, required=False)
+    parser.add_argument('--dir', type=str, required=False)
     arg = parser.parse_args()
     filename = arg.shiplist
     shipclass = arg.shipclass
@@ -81,7 +82,10 @@ def main():
     with open(filename, 'r') as shipsfile:
         shiplist = shipsfile.read().split('\n')
         for side, color in [('enemy',ENEMY_COLOR), ('ally', ALLY_COLOR)]:
-            directory = f'icons/{shipclass}/{side}'
+            if arg.dir:
+                directory = f'{arg.dir}/{shipclass}/{side}'
+            else:
+                directory = f'icons/{shipclass}/{side}'
             try:
                 os.makedirs(directory)
             except FileExistsError:
